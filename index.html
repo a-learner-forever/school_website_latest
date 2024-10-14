@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="ips_css.css">
+
+    <title>Indus Public School</title>
+  <style>
+    .div_for_img{display: inline;
+              margin-left: 10%;  
+              padding: 20px;
+              height: 50;
+             max-width: 50;
+    }     
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.icon {
+  display: none;
+} 
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  
+}
+/* learn JS| */
+
+  </style>
+</head>
+
+<body >
+  <!-- header -->
+  <div style="background-color:rgba(124, 122, 64, 0.729);width: 100%;height: 50px;padding: 5px;">
+    <a href="http://www.facebook.com/"><img src="facebook.png" width="30" height="30"></a>
+    <a href="http://www.youtube.com"><img src="youtube.png" width="30" height="30"></a>
+    <a href="mailto:info@ipsrohtak.edu.in "><img src="mail.png" width="30" height="30"></a>
+    <a style="color:#f2f2f2"> <img src="call.png" width="30" height="30"> 9992900573</a>     
+    <!-- phone -->
+  </div>
+
+ <!-- header -->
+<div class="headerBox"; style="background-image: url(https://img.freepik.com/free-vector/gradient-international-day-education-background_23-2151120687.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1727740800&semt=ais_hybrid);" >
+  
+  <img class="headerImg" src="logo_ips_noBG.png"width="140"height="140">
+  <div class="header">
+  <h1 id="Heading"><u>INDUS PUBLIC SCHOOL</u></h1>
+  <p class="headerP">Leaders are not born, they are produced.</p>
+  </div>
+
+</div>
+   <!-- navigation -->
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="IPS contact .html">Contact</a>
+  <a href="IPS feedback.html">Feedback</a>
+  <a href="IPS gallery.html">Gallery</a>
+  <a href="IPS read more .html">About us</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+  <!-- navigation -->
+  
+<!-- learn JS -->
+ 
+<!-- Slide Show -->
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    
+    <img src="school.jpeg" alt="" width="100%" height="500px">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="activity.jpeg" alt="" width="100%" height="500px">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="https://ipsrohtak.edu.in/templates/indus-rtk/images/slider2.jpg" alt="" width="100%" height="500px">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://www.thesaurus.com/e/wp-content/uploads/2019/03/1000x700-education-quotes-1-790x310.jpg" alt="" width="100%" height="400px">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://erepublic.brightspotcdn.com/dims4/default/fade89d/2147483647/strip/true/crop/5753x3000+316+0/resize/840x438!/quality/90/?url=http%3A%2F%2Ferepublic-brightspot.s3.us-west-2.amazonaws.com%2Ff6%2F82%2F0092709b4ad3ab08de4e11ed8452%2Fhttps-download.shutterstock.com%2Fgatekeeper%2FW3siZCI6ICJzaHV0dGVyc3RvY2stbWVkaWEiLCAiayI6ICJwaG90by8xNzc3MjkyOTcyL2h1Z2UuanBnIiwgImRjIjogImlkbF8xMjMiLCAiZSI6IDE2MzQwMDc3MjksICJtIjogMX0sICJhTmJvRUFJNkdCejhWd3U2eXhHNWJTVDgyNGMiXQ%3D%3D%2Fshutterstock_1777292972.jpg" alt="" width="100%" height="400px">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  
+  <br>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+<!-- column -->
+   <hr style="margin-left: 15%;margin-right: 15%;">
+   <div style="background-color: #d3c803; size: 60%;margin-left: 10%; margin-right: 13%;">
+    <h2 style="color: #f8f8f6;">Your child’s education will influence the future of the world.
+      We take that seriously.</h2>
+      <p style="color: #f8f8f6;">As your child’s mind is expanding during formative years, both their academic and moral compasses are being set. That’s why it’s so important that their hearts and minds be trained in a community that aligns with your beliefs and values. </p></div>
+   
+  <div class="row">
+    <div class="column main">
+    <h2 >Indus Public School </h2>
+    <img  src="logo_ips_noBG.png"width="140"height="140">
+    <br>
+    <p >Indus Public School is spread over a vast lush green campus on National Highway-10. 30 minutes drive from Delhi Border. The School is affiliated to Central Board of Secondary Education, Delhi up to XII level providing education in Medical, Non-Medical, Commerce Streams.
+    Every initiative, effort at the upcoming institute is single-mindedly focused on these three basic values.<p>
+
+      <h2>A Societal Mission</h2>
+      <img src="https://www.eschoolnews.com/files/2023/07/arts-education-STEAM.jpeg" width="300" height="150">
+    <p >
+      Our mission is to contribute to the world by educating students for lives of leadership and contribution with integrity; advancing fundamental knowledge and cultivating creativity; leading in pioneering research for effective clinical therapies; and accelerating solutions and amplifying their impact. </p>
+       
+        <h2>Our Vision</h2>
+        <p>
+          Indus Public School has been established with the vision  to initiate a ceaseless process of searching qualitative improvement in response to changes taking place in the society. The school is developing a delivery system to make the vision of the founder  a vibrant reality. 
+ 
+National curriculum Framework of School Education 2000 A.D. talks about multiple intelligence as opposed to the traditional concept of intelligence. Multiple intelligence views every individual as a unique person and the uniqueness influences the various ways in which learning takes place, an idea like this, which does not hold intelligence as a unitary concept, but a multiple attribute promotes personalization of education by connecting the learner’s total life to the learning in the classroom. Indus Public School shall endeavor to put this concept in practice. This will ensure success to many and hence better level of self-esteem amongst students. </p>
+        
+    </div>
+    
+    <!-- side section -->
+    <div class="column side">
+       <h2>Engaging activites</h2>
+       <hr>
+        <h2>Sports & Games</h2>
+        <img src="https://static.vecteezy.com/system/resources/previews/013/106/714/original/sport-logo-design-basketball-player-icon-design-colorful-logo-design-free-vector.jpg" width="300" height="150">
+       <p> Games and sports form an integral part of school curriculum. We have all heard the old saying “All work and no play makes Jack a dull boy”. The importance of games....</p>
+       <hr>
+       <h2>Library</h2>
+       <img src="https://www.shutterstock.com/image-photo/blurred-public-library-interior-space-260nw-2282856475.jpg" width="300" height="150">
+       <p>Imagination and Creativity
+        Books stimulate the imagination, transporting readers to different worlds and sparking creativity. Whether it’s through the enchanting tales of fantasy or the innovative concepts in science fiction, reading inspires students to dream big and think creatively
+        </p>
+        <hr>
+       <h2>AI and ATL lab</h2>
+       <img src="https://thehill.com/wp-content/uploads/sites/2/2023/12/AI-e1709661219709.jpg?strip=1" width="300" height="150">
+       <p>Today’s generation is techno upgraded. They cannot imagine life without computers, mobiles, tablets & laptops.</p>
+       </p>
+       <hr>
+    </div>
+    
+  </div>
+
+  <br>
+  <!-- image -->
+    
+    <div style="margin-left: 40px;">
+      <img src="plantation.jpeg" width=30% height=200>
+      <img src="assembly.jpeg"width=30% height=200>
+      <img src="assembly.png" width=30% height=200>
+  </div> 
+  <br>
+   <div style="margin-left: 40px;">
+    <img src="activity.jpeg"width=30% height=200>
+    <img src="education (1).jpg"width=30% height=200>
+    <img src="army.jpeg"width=30% height=200>
+  </div>  
+   <!-- image -->
+
+   
+<!-- footer -->
+  <div style="height: 60px;width: 100%;background-color: #f5eb23;">
+  <p style="text-align: center;color: #faf6f6;">  &#169; All rights reserved. Last updated in  2024.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p> 
+  </div>
+
+</body>
+</html>
